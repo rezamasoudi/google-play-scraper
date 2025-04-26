@@ -17,10 +17,10 @@
 Simply download or clone the repository:
 
 ```bash
-git clone https://github.com/your-username/google-play-scraper-php.git
+git clone https://github.com/rezamasoudi/google-play-scraper.git
 ```
 
-Or manually include the `GooglePlayScraper.php` file into your project.
+Or manually include the `google-play-scraper.php` file into your project.
 
 ---
 
