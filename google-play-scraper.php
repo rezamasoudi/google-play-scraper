@@ -123,7 +123,3 @@ class GooglePlayScraper
     }
 
 }
-
-
-$scraper = new GooglePlayScraper('com.fonto.storyfont');
-var_dump($scraper->version);
