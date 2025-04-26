@@ -105,7 +105,8 @@ class GooglePlayScraper
     {
         $source = $source["ds:$ds_num"];
         $value = $this->nestedLook($source, $data_map);
-        return $value ?? $fallback_value;
+        if(!is_string($value) || !$value) return $fallback_value;
+        return $value;
     }
 
     protected function nestedLook(array $source, array $indexs): mixed
@@ -122,3 +123,7 @@ class GooglePlayScraper
     }
 
 }
+
+
+$scraper = new GooglePlayScraper('com.fonto.storyfont');
+var_dump($scraper->version);
