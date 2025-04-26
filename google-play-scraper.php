@@ -105,7 +105,7 @@ class GooglePlayScraper
     {
         $source = $source["ds:$ds_num"];
         $value = $this->nestedLook($source, $data_map);
-        if(!is_string($value) || !$value) return $fallback_value;
+        if(!$value || !is_string($value)) return $fallback_value;
         return $value;
     }
 
